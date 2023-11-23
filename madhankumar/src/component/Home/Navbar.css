@@ -22,7 +22,7 @@
     align-items: center;
     height: 75px;
     color:white;
-    background-color: #2a0845;;
+    background-color: orange;
   
 
 }
@@ -81,52 +81,44 @@
 
 }
 
-@media screen and (max-width:80px){
-    .logo{
-        display: flex;
-        position: absolute;
-        top: 18px;
-        left: 35px;
-
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    /* Hide the navigation links by default */
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      background-color:orange;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      background-size: cover;
     }
-    .nav-links{
-        display: none;
-
+  
+    /* Style for each individual link */
+    .navbar a {
+      padding: 15px;
+      text-decoration: none;
+      color: white;
     }
-    .nav-links-mobile{
-        position: absolute;
-        display: block;
-        list-style: none;
-        background-color: gray;
-        left: 0;
-        top: 74px;
-        transition: all 0.5s ease-out;
-        width: 100%;
+  
+    /* Show the navigation links when the menu icon is clicked */
+    .navbar .navbar-toggle {
+      display: block;
+      padding: 15px;
+      color: white;
+      cursor: pointer;
     }
-    .home{
-        color: white;
-        text-align: center;
-        padding:32px; 
-        width:100%;
-        transition: all 0.5 ease;
+  
+    /* Hide the navigation links initially */
+    .navbar .navbar-links {
+      display: none;
     }
-    .Login .Signup{
-        color: white;
-        text-align: center;
-        padding:32px; 
-        width:100%;
-        transition: all 0.5 ease;
-
+  
+    /* Show the navigation links when the menu icon is clicked */
+    .navbar .navbar-toggle:checked + .navbar-links {
+      display: block;
     }
-    .mob-menu-icon{
-        display: block;
-        position: absolute;
-        font-size: 30px;
-        color:white;
-        background-color: gray;
-        outline: none;
-        top: 15px;
-        right: 25px;
-    }
-    
-}
+  }
+  
