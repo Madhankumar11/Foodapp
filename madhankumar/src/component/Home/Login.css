@@ -72,7 +72,7 @@ body{
     margin-top: 5px;
   }
   /* Mobile Styles for Login Page */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -82,9 +82,10 @@ body{
   }
 
   .login-container {
-    width: 90%;
+    width: 60%;
     margin: 50px auto;
-    
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
